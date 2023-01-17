@@ -1,0 +1,359 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300&display=swap');
+:root{
+    background-color: #1D242C;
+    color: hsl(0, 0%, 95%);
+    font-family: 'Roboto Slab', serif;
+}
+
+.title{
+    font-family: 'Lato', serif;
+    font-size: 3rem;
+    text-decoration:underline;
+    padding:3px;
+}
+
+.navbar{
+    font-family: 'Montserrat', sans-serif;
+    padding:20px;
+    height: 65px;
+    color: hsl(0, 0%, 95%);
+}
+
+.navbar .name{
+    font-family: 'Orbitron', sans-serif;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: ease-out 0.4s;
+}
+
+.navbar .name:hover{
+    transform:scale(1.2);
+    padding: 2px;
+    background-color: #1b222b;
+}
+
+.navbar .name, .navbar .links{
+    display:inline-block;
+}
+
+.navbar .links{
+    float:right;
+    margin-left: 1rem;
+}
+
+.navbar .links li{
+    margin-left: 1rem;
+    display:inline;
+    text-decoration:none;
+    position: relative;
+}
+
+.navbar .links li::after{
+    position:absolute;
+    content:'';
+    background-color: rgb(24, 119, 202);
+    width:100%;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    transform: scaleX(0);
+    transform-origin: center;
+    transition: transform 0.25s ease-out;
+}
+
+.navbar .links li:hover::after{
+    transform: scaleX(1);
+}
+
+.m-navbar{
+    display:none;
+}
+
+.list{
+    display:none;
+    transition:1s;
+}
+
+
+
+
+/*Intro*/
+
+.Intro{
+    margin-top: 10px;
+}
+
+.in-flex-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 300px;
+}
+
+
+.portait{
+    width: auto;
+    flex-basis: 33%;
+    border:4px #00040f solid;
+    
+}
+.item{
+    /*border: 4px black solid;
+    border-radius: 10px;
+    background-color: rgb(24, 119, 202);*/
+    padding: 25px;
+    flex-basis: 50%;
+
+}
+
+.item1{
+    position: relative;
+    font-size: 0.8rem;
+}
+
+.in-iam{
+    font-size:1rem;
+    color: #737373;
+}
+
+.in-name{
+    display: inline;
+    font-family: 'Lato', cursive;
+
+}
+
+.in-desc{
+    position:absolute;
+    font-size: 0.8rem;
+    bottom:0;
+    right:0;
+}
+
+
+
+/*TechStacks*/
+
+.ts-flex{
+    display:flex;
+    margin-top: 10px;
+    justify-content: center;
+}
+
+.ts-flex .languages, .ts-flex .web{
+    position:relative;
+    flex-grow: 1;
+    padding: 15px;
+    background-color: #13171e;
+    text-align: center;
+    border-radius: 10px;
+    flex-basis: 50%;
+    margin: 20px;
+    font-family: 'Montserrat', serif;
+}
+
+.ts-flex .languages ul li{
+    display: inline-block;
+    padding:7px;
+    background-color: #374051;
+    margin: 3px;
+    font-family: 'Roboto Slab', serif;
+}
+
+
+.ts-flex .web ul li{
+    display: inline-block;
+    padding:7px;
+    background-color: #374051;
+    margin: 3px;
+    font-family: 'Roboto Slab', serif;
+}
+
+
+/*Experience*/
+
+.j{
+    width: 700px;
+    padding: 10px;
+    margin: auto;
+    margin-top: 30px;
+}
+
+.j .card{
+    position: relative;
+    border:5px #00040f solid;
+    border-radius: 5px;
+    padding:10px;
+    margin: 1rem;
+    margin-left: 3rem;
+}
+
+.j .card .job, .j .card .time{
+    font-size: 0.7rem;
+    color:#868686;
+    margin-bottom: 7px;
+}
+
+.j .card:nth-child(odd){
+    background-color: #374051;
+}
+
+.j .card:nth-child(even){
+    background-color: #1f2d45;
+}
+
+.j .card .job .link{
+    font-size: 1.5rem;
+    color: rgb(255,255,255);
+    text-decoration: underline;
+}
+
+.j .card .job .link:hover{
+    color:#f2ff02;
+}
+
+.j .card .job .ex-desc ul{
+    list-style-type: circle;
+}
+
+
+
+
+
+
+/*Projects*/
+
+
+.projects .project-list .project-item .p-title{
+    font-size: 2rem;
+    text-align: center;
+    text-decoration: underline;
+    width:100%;
+}
+
+.projects .project-list .project-item{
+    display:flex;
+    JUSTIFY-CONTENT: space-between;
+    align-items: center;
+    position: relative;
+    border:5px #00040f solid;
+    border-radius: 5px;
+    padding:1rem;
+    margin: 1rem;
+    margin-left: 3rem;
+    flex-grow: 1;
+}
+
+.projects .project-list .project-item:nth-child(odd){
+    background-color: #374051;
+}
+
+.projects .project-list .project-item:nth-child(even){
+    background-color: #1f2d45;
+}
+
+.projects .project-list .project-item .p-name{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-basis: 33%;
+}
+
+
+@media (max-width: 570px) {
+    .navbar{
+        display: none;
+    }
+    .m-navbar{
+        display: block;
+        padding:15px;
+        color: hsl(0, 0%, 95%);
+        position: fixed;
+        z-index: 10;
+        width: 100%;
+    }
+    .material-symbols-outlined {
+        float: right;
+        padding:10px;
+    font-variation-settings:
+        'FILL' 0,
+        'wght' 400,
+        'GRAD' 0,
+        'opsz' 48
+    }
+
+    .active{
+        display: block;
+    }
+
+    .list{
+        padding: 10px;
+        margin-top: 10px;
+        background-color:#00040f;
+        border-radius: 5px;
+        font-family: 'Montserrat', sans-serif;
+
+        transition: 1s;
+    }
+
+    .m-name{
+        font-family: 'Orbitron', sans-serif;
+        font-size:large;
+        text-align: left;
+        padding: 10px;
+        font-weight: bold;
+    }
+
+    .m-links li{
+        text-align:center;
+        padding:8px;
+    }
+
+    .m-links li:hover{
+        background-color: #1b222b;
+        border-radius: 5px;
+    }
+
+    .m-links li a{
+        display:block;
+    }
+
+
+
+
+
+    .in-flex-container{
+        display: block;
+    }
+
+    .in-iam{
+        font-size: 3rem;
+        color: #e3e3e3;
+    }
+
+    .in-flex-container .portait{
+        width: 75%;
+        margin: auto;
+        border-radius: 50%;
+    }
+
+
+}
+
+@media (min-width: 700px){
+    .in-name{
+        font-size: 1.8rem;
+    }
+}
+
+@media (max-width: 700px){   
+    .j{
+        width: 100%;
+    }
+}
