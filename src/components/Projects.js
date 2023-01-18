@@ -5,7 +5,7 @@ export default function Projects() {
     var p_desc = [];
 
     for (var i = 0; i < projects.length; i++) {
-        p_desc[i] = projects[i].desc.map((d) => <li>{d}</li>)
+        p_desc[i] = projects[i].desc.map((d) => <li key ={d}>{d}</li>)
     }
 
     var projectList = projects.map((p) => 

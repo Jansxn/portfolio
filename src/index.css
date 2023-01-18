@@ -16,6 +16,7 @@
     font-size: 3rem;
     text-decoration:underline;
     padding:3px;
+    text-align: center;
 }
 
 .navbar{
@@ -134,7 +135,6 @@
     bottom:0;
     right:0;
 }
-
 
 
 /*TechStacks*/
@@ -265,6 +265,45 @@
     flex-basis: 33%;
 }
 
+
+
+/*Contact*/
+
+.contact{
+    background-color: #00040f;
+    padding: 10px;
+}
+.contact .contact-desc{
+    text-align: center;
+}
+
+.contact .contact-links{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.contact .contact-links div img{
+    display: inline;
+}
+
+.contact .contact-links .contact-img{
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.contact .contact-links .contact-info{
+    display: none;
+}
+
+.contact .contact-links .visible{
+    display: inline;
+}
+
+.contact .contact-links .clicked{
+    border: #e3e3e3 1px solid;
+}
 
 @media (max-width: 570px) {
     .navbar{
