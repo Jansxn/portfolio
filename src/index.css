@@ -101,9 +101,15 @@
 .portait{
     width: auto;
     flex-basis: 33%;
-    border:4px #00040f solid;
-    
+    display: flex;
+    justify-content: center;
 }
+
+.portrait-img{
+    border:4px #00040f solid;
+    max-height: 400px;
+}
+
 .item{
     /*border: 4px black solid;
     border-radius: 10px;
@@ -213,7 +219,7 @@
     text-decoration: underline;
 }
 
-.j .card .job .link:hover{
+.link:hover{
     color:#f2ff02;
 }
 
@@ -266,6 +272,23 @@
 }
 
 
+.projects .p-img-holder{
+    width: 75%;
+    background-color: #1b222b;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+}
+
+.projects .p-img{
+    height: 200px;
+}
+
+.projects .link{
+    text-decoration: underline;
+}
+
+
 
 /*Contact*/
 
@@ -303,6 +326,11 @@
 
 .contact .contact-links .clicked{
     border: #e3e3e3 1px solid;
+}
+
+.copy{
+    padding-top: 5px;
+    text-align: center;
 }
 
 @media (max-width: 570px) {
