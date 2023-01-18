@@ -9,7 +9,6 @@ This repository contain the code for a personal portfolio website. The website w
     
 \
 Tasks left to do
-- Insert images for lists
 - Update techstacks to click to respective websites 
-- update contact paage with a backend (will update V1.5)
+- update contact page with a backend (will update V1.5)
 - **V2.0 (next stage)**

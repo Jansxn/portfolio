@@ -1,4 +1,5 @@
 import React from 'react'
+import portrait from './images/portrait.jpg'
 
 export default function Intro() {
     return (
@@ -17,7 +18,7 @@ export default function Intro() {
                     </div>
                 </div>
                 <div className = "item2 portait">
-                    <img src="https://img.freepik.com/free-photo/portrait-white-man-isolated_53876-40306.jpg?w=2000" className = "" alt="robot_hand_image" />
+                    <img src={portrait} className = "portrait-img" alt="robot_hand_image" />
                 </div>
             </div>
         </div>

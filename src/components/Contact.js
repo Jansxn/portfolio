@@ -39,7 +39,11 @@ export function Contact() {
                 </div>
 
             </div>
-
+        
+            <div className = "copy">
+            This website was made using React.js and Tailwind.css by Jason Shaun D'Mello. The code is avaliable on github.<br />
+            Image Icons were aquired from icons8.com
+            </div>
         </div>
     )
 }

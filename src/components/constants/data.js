@@ -1,3 +1,7 @@
+import nontouch from '../images/non-touch-writing-pad.jpg'
+import website from '../images/website.png'
+import linefollow from '../images/linefollow.png'
+
 export const techstacks = [
     ['Python', 'JavaScript' ,'C', 'C++', 'Java', 'Shell (Bash)'],
     ['HTML', 'CSS', 'JavaScript', 'React.js', 'Tailwind.css']
@@ -33,9 +37,9 @@ export const projects = [
         desc: ['Developed the code for a bot that follows a black line on a white surface using sensors and motors',
             'Used Arduino to code the bot',
             'Bot was part of my taskphase project for Robotics and Circuits',
-            'Image attached is not of the bot since no pictures were taken during the project (also no github link ;P)'],
+            'P.S. no github link'],
         link: '',
-        img:''
+        img: linefollow
     },
     {
         id: 1,
@@ -45,7 +49,7 @@ export const projects = [
             'Worked on front-end and back-end of the project along with 2 other team members from Robotics and Circuits',
             'Won 2nd place in Vedant 12.0 at MITs Techtatva'],
         link: 'https://github.com/RNCManipal/Non-Touch_Writing_Pad',
-        img : ''
+        img : nontouch
     },
     {
         id: 2,
@@ -54,6 +58,6 @@ export const projects = [
             'Used React.js to make the website update the style and content dynamically when new content is added to a json file',
             'Used Tailwind.css as well as vanilla css to make the webite responsive across all devices'], 
         link: 'https://github.com/Jansxn/portfolio_app' ,
-        img: ''
+        img: website
     }
 ]
