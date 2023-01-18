@@ -11,7 +11,7 @@ export default function Navbar() {
                 <li><a href = "#intro">About</a></li>
                 <li><a href = "#experience">Experience</a></li>
                 <li><a href = "#project">Projects</a></li>
-                <li><a href = "#">Contact</a></li>
+                <li><a href = "#contact">Contact</a></li>
             </ul>
         </nav>
 
@@ -27,11 +27,10 @@ export default function Navbar() {
                     <div className = "m-name"><a href = "/"><b>J.S.D</b></a></div>
 
                     <ul className = "m-links">
-                        <li><a href = "#">Home</a></li>
-                        <li><a href = "#">About</a></li>
-                        <li><a href = "#">Experience</a></li>
-                        <li><a href = "#">Projects</a></li>
-                        <li><a href = "#">Contact</a></li>
+                    <li><a href = "#intro">About</a></li>
+                    <li><a href = "#experience">Experience</a></li>
+                    <li><a href = "#project">Projects</a></li>
+                    <li><a href = "#contact">Contact</a></li>
                     </ul>
                 </div>
 

@@ -4,7 +4,7 @@ import { exp } from './constants/data'
 export function Experience(){
     var desc_arr = [];
     for (var i =0;i<exp.length; i++){
-        desc_arr.push(exp[i].desc.map((d)=> <li>{d}</li>))
+        desc_arr.push(exp[i].desc.map((d)=> <li key = {d}>{d}</li>))
     }
 
     var ex = exp.map((e)=> 
@@ -23,7 +23,7 @@ export function Experience(){
 
     return(
         <div className = 'j' id = "experience">
-            <div class = "title">
+            <div className = "title">
                 Experience
             </div>
             {ex}
