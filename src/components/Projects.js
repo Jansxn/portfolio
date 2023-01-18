@@ -13,8 +13,10 @@ export default function Projects() {
 
             <div className = "p-name">
                 <h2 className='p-title'><b>{p.name}</b></h2>
-                <img src = {p.img} alt = {p.name} />
-                <a href={p.link}>Github</a>
+                <div className='p-img-holder'>
+                    <img src = {p.img} alt = {p.name}  className = "p-img"/>
+                </div>
+                <a href={p.link} className = "link">Github</a>
             </div>
 
             <p className='p-desc'>
