@@ -219,6 +219,11 @@
     text-decoration: underline;
 }
 
+
+.j .card .job .link:hover{
+    color:#f2ff02;
+}
+
 .link:hover{
     color:#f2ff02;
 }
@@ -286,6 +291,28 @@
 
 .projects .link{
     text-decoration: underline;
+}
+
+.projects .p-desc{
+    flex-basis: 65%;
+}
+
+@media (max-width : 825px){
+    .projects .project-list .project-item{
+        display:block;
+    }
+
+    .projects .p-img-holder{
+        width: auto;
+    }
+
+    .projects .p-desc{
+        padding: 5px;;
+    }
+
+    .projects .p-desc ul{
+        list-style-type: circle;
+    }
 }
 
 
