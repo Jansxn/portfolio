@@ -3,7 +3,34 @@
     src: url(./resources/sometype_mono.ttf) format('truetype');
 }
 
+@import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
+
+html{
+    /* width: 100vw; */
+}
 body{
     margin: 0px;
     background-color: #D9D9D9;
+    /* width: 100vw; */
+}
+
+.title{
+    font-family: 'Sometype Mono';
+    font-size: 50px;
+    margin-left: 20px;
+    margin-top: 50px;
+    text-transform: capitalize;
+}
+
+.underline{
+    width: 60%;
+    height: 2px;
+    background-color: #000000;
+    margin-bottom: 20px;
+}
+
+@media (max-width:500px){
+    .underline{
+        width: 90%;
+    }
 }

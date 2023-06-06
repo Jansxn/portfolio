@@ -8,7 +8,7 @@ import resume from "../../resources/resume.pdf";
 function Home() {
 
     return (
-        <div className="h" id = "home">
+        <div className="h" id = "home" style={{width:'100%'}}>
             <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
             <div className="nav-space">
             </div>

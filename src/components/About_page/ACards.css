@@ -1,0 +1,40 @@
+.acard{
+    padding: 10px;
+    font-family: 'Lato', sans-serif;
+    border-radius: 15px;
+}
+
+.acardtitle{
+    font-size: 20px;
+    text-transform: capitalize;
+    text-align: center;
+    text-decoration: underline;
+    margin-bottom: 10px;
+}
+
+.acarddesc{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 10px;
+}
+
+.acarddesc .item{
+    /* flex: 1; */
+    text-align: center;
+    min-width: 50px;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.n2{
+    grid-column-start: 3;
+    grid-row-start: 1;
+    grid-row-end: 3;
+}
+
+.n4{
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
