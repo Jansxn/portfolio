@@ -57,7 +57,7 @@ function ExperienceCard({ name, desc, role, resource, id, location, duration }) 
 function Experience() {
     return (
         <div className="experience" id = "experience">
-            <div className="atitle title">
+            <div className="etitle title">
                 Experience
                 <div className="underline"></div>
             </div>

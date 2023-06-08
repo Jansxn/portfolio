@@ -1,0 +1,139 @@
+.contact{
+    background-color: var(--dark-color);
+    color: var(--light-color);
+    padding: 10px;
+    padding-bottom: 20px;
+    border-radius: 30px 30px 0px 0px;
+}
+
+.ctitle{
+    text-align: center;
+    margin-bottom: 35px;
+}
+
+.cunderline{
+    background-color: var(--light-color);
+    margin: 0 auto;
+}
+
+.cdata{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    /* border: 2px white solid; */
+}
+
+.cformholder{
+    /* background-color: aliceblue; */
+    width: 50%;
+}
+
+.cform{
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+}
+
+.cform .nameinput{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    width: 85%;
+}
+
+.cform textarea{
+    resize: vertical;
+}
+
+.cform .inholder{
+    background-color: var(--light-color);
+    width: 85%;
+    color: black;
+}
+
+.cform .inholder .in{
+    box-sizing: border-box;
+    width: 100%;
+    background-color: var(--light-color);
+    border: 0px;
+    height: 40px;
+}
+
+.cform .inholder .in:focus{
+    outline: none;
+}
+
+.cform .inholder{
+    position: relative;
+}
+
+.cform .inholder .label{
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 10px;
+    pointer-events: none;
+    transition: 0.5s;
+    font-family: 'Nunito';
+}
+
+.cform .inholder .in:focus ~ .label, .cform .inholder .in:valid ~ .label{
+    top: -30px;
+    left: 0;
+    color: var(--light-color);
+    font-size: 16px;
+    /* text-decoration: underline; */
+}
+
+.submit{
+    background-color: var(--light-color);
+    color: var(--dark-color);
+    border: 0px;
+    padding: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.submit:hover{
+    background-color: var(--green-color);
+    /* color: var(--light-color); */
+}
+
+.cinfo{
+    width: 40%;
+}
+
+.clinks{
+    margin-top: 30px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap:20px;
+    justify-content: space-around;
+}
+
+@media (max-width: 768px){
+    .cformholder{
+        width: 80%;
+    }
+    .cinfo{
+        width: 80%;
+    }
+}
+
+@media (max-width: 450px){
+    .cformholder{
+        width: 90%;
+        /* background-color: aliceblue; */
+    }
+    .cinfo{
+        width: 90%;
+    }
+}
