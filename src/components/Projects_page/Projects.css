@@ -1,5 +1,6 @@
 .projects{
     margin-right: 15px;
+    margin-top: 100px;
 }
 
 .ptitle{
@@ -12,4 +13,129 @@
     color: #8c8c8c;
     margin-left: auto;
     margin-right: 0;
+}
+
+.pcards-container{
+    background-color:var(--grey-color);
+    height: 400px;
+    width: 80%;
+    margin: 0 auto;
+    border: 1px solid var(--dark-color);
+    margin-bottom: 20px;
+    border-radius: 20px;
+    display: flex;
+}
+
+.pcards-container .scrollmenu{
+    /* font-family: 'Sometype Mono'; */
+    white-space: nowrap;
+    width: 30%;
+    background-color: var(--dark-color);
+    overflow-y: auto;
+    overflow-x: hidden;
+    border-radius:20px;
+    display:inline-flex;
+    color: var(--light-color);
+    flex-direction: column;
+    padding-left: 10px;
+    padding-top: 10px;
+    /* justify-content: space-between; */
+    gap:25px;
+    /* margin-right: 0px; */
+    align-items: center;
+}
+
+.pcards-container .scrollmenu::-webkit-scrollbar {
+    background-color: transparent;
+    width: 10px;
+}
+
+.pcards-container .scrollmenu::-webkit-scrollbar-thumb {
+    background-color: var(--grey-color);
+    border-radius: 10px;
+    /* margin: 10px; */
+    border: 2px solid transparent;
+    -webkit-background-clip: content-box;
+    background-clip: content-box;
+}
+
+.pcards-container .scrollmenu button{
+    margin-top: 10px;
+    padding: 15px;
+    display: flex;
+    align-items: center;
+    border: 0px;
+    background-color: var(--dark-color);
+    color: var(--light-color);
+    font-size: 15px;
+    border-radius: 10px;
+    font-family: 'Nunito', 'Sometype Mono', monospace;
+    word-wrap: break-word;
+    /* width: 100%; */
+}
+
+.pcards-container .scrollmenu button:hover{
+    cursor: pointer;
+    color: var(--dark-color);
+    background-color: var(--green-color);
+    opacity: 0.5;
+}
+
+.pcards-container .scrollmenu .active{
+    background-color: var(--green-color);
+    color: var(--dark-color);
+}
+
+.pcard-holder{
+    display: inline-flex;
+    align-items: center;
+    width: 70%;
+    height: 100%;
+    border-radius:20px;
+}
+
+@media (max-width: 1000px){
+    .pcards-container{
+        width: 100%;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+}
+
+@media (max-width:550px){
+    .pcards-container{
+        flex-direction: column;
+        height: 100%;
+    }
+
+    .pcards-container .scrollmenu{
+        width: 100%;
+        height: 30%;
+        overflow-y: hidden;
+        overflow-x: auto;
+        padding-left: 0px;
+        padding-top: 0px;
+        padding-bottom: 10px;
+        flex-direction: row;
+        gap: 10px;
+        border-radius: 20px 20px 5px 5px;
+    }
+
+    .pcards-container .scrollmenu button{
+        padding: 10px;
+        font-size: 12px;
+    }
+
+    .pcards-container .scrollmenu button:hover{
+        opacity: 1;
+    }
+
+    .pcard-holder{
+        width: 100%;
+        height: 70%;
+    }
+
+    .pcard-title{
+        margin-top: 20px;
+    }
 }
