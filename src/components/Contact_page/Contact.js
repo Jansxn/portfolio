@@ -16,7 +16,7 @@ function Contact() {
 
         <div className="cdata">
             <div className="cformholder">
-            <form className="cform" action="https://formsubmit.co/3785c230423a4b0e51cfce60c0c2ce39" method="POST">
+            <form className="cform" action="https://formsubmit.co/jason.dmello21@gmail.com" method="POST">
 
             <div className="nameinput">
             <label htmlFor="fname" className="inholder">
