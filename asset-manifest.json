@@ -1,19 +1,26 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.1f3e8c13.css",
-    "main.js": "/portfolio/static/js/main.effcf01c.js",
-    "static/js/787.7ec6262b.chunk.js": "/portfolio/static/js/787.7ec6262b.chunk.js",
-    "static/media/portrait.jpg": "/portfolio/static/media/portrait.c9b57858c489b65f9c36.jpg",
-    "static/media/non-touch-writing-pad.jpg": "/portfolio/static/media/non-touch-writing-pad.688b47c29d2286f810d3.jpg",
-    "static/media/website.png": "/portfolio/static/media/website.f046633ffdc8c8446930.png",
-    "static/media/linefollow.png": "/portfolio/static/media/linefollow.783b090ff481f96785b2.png",
+    "main.css": "/portfolio/static/css/main.90334bbc.css",
+    "main.js": "/portfolio/static/js/main.c8d7ccdd.js",
+    "static/js/787.d9a20797.chunk.js": "/portfolio/static/js/787.d9a20797.chunk.js",
+    "static/media/jason_prof.jpg": "/portfolio/static/media/jason_prof.73995d6eb3e2535cce4d.jpg",
+    "static/media/line_follow.png": "/portfolio/static/media/line_follow.bfb8a8ce421f457071c2.png",
+    "static/media/anpr.jpg": "/portfolio/static/media/anpr.81e5249f8ad0146cf34e.jpg",
+    "static/media/resume.pdf": "/portfolio/static/media/resume.d5bab315bbcca1535822.pdf",
+    "static/media/portfolio.png": "/portfolio/static/media/portfolio.1bfe540c62ecbd75e349.png",
+    "static/media/micromouse.jpg": "/portfolio/static/media/micromouse.d7c8b7d1d76f56e94c87.jpg",
+    "static/media/touchless.jpg": "/portfolio/static/media/touchless.966d9a51f4e48de2eb1c.jpg",
+    "static/media/elderlycare.jpg": "/portfolio/static/media/elderlycare.dc7a9f2e0df86112ba6b.jpg",
+    "static/media/campuscart.jpg": "/portfolio/static/media/campuscart.7f1385c8243505c97d21.jpg",
+    "static/media/sometype_mono.ttf": "/portfolio/static/media/sometype_mono.321fa13b1bf5e9fea846.ttf",
+    "static/media/pavan 772.svg": "/portfolio/static/media/pavan 772.b3ba9953eb525bd0b8deedf322ce6ace.svg",
     "index.html": "/portfolio/index.html",
-    "main.1f3e8c13.css.map": "/portfolio/static/css/main.1f3e8c13.css.map",
-    "main.effcf01c.js.map": "/portfolio/static/js/main.effcf01c.js.map",
-    "787.7ec6262b.chunk.js.map": "/portfolio/static/js/787.7ec6262b.chunk.js.map"
+    "main.90334bbc.css.map": "/portfolio/static/css/main.90334bbc.css.map",
+    "main.c8d7ccdd.js.map": "/portfolio/static/js/main.c8d7ccdd.js.map",
+    "787.d9a20797.chunk.js.map": "/portfolio/static/js/787.d9a20797.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.1f3e8c13.css",
-    "static/js/main.effcf01c.js"
+    "static/css/main.90334bbc.css",
+    "static/js/main.c8d7ccdd.js"
   ]
 }
