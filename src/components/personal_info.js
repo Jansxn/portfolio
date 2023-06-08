@@ -1,3 +1,11 @@
+import anpr from '../resources/proj/anpr.jpg'
+import campuscart from '../resources/proj/campuscart.jpg'
+import elderlycare from '../resources/proj/elderlycare.jpg'
+import micromouse from '../resources/proj/micromouse.jpg'
+import portfolio from '../resources/proj/portfolio.png'
+import touchlesspad from '../resources/proj/touchless.jpg'
+import linefollow from '../resources/proj/line_follow.png'
+
 export const technologies = [
     'OpenCV', 'Arduino' ,'Reactjs', 'Flask (Backend)', 'Github (Git)'
 ]
@@ -28,7 +36,8 @@ export const proj = [
                 'Participated in competitions in India'
             ],
         tech: ['Arduino', 'C++', 'Embedded Systems'],
-        gitlink: 'https://github.com/RNCManipal/time_challenge/tree/main'
+        gitlink: 'https://github.com/RNCManipal/time_challenge/tree/main',
+        resource: linefollow
     },
 
     {
@@ -41,7 +50,8 @@ export const proj = [
                 'Collaborated with teammates and acted as a POC to team leader of the club for the project.'
             ],
         tech: ['Arduino', 'C++', 'Embedded Systems'],
-        gitlink: 'https://github.com/RNCManipal/micromouse_2023'
+        gitlink: 'https://github.com/RNCManipal/micromouse_2023',
+        resource: micromouse
     },
     {
         id: 3,
@@ -52,7 +62,8 @@ export const proj = [
                 'Helped in implementing the user log-in and log-out functionalities.',
             ],
         tech: ['React.js', 'Python', 'Google Cloud Platform', 'Figma'],
-        gitlink: 'https://github.com/Jansxn/GFG_Hack_2023'
+        gitlink: 'https://github.com/Jansxn/GFG_Hack_2023',
+        resource: elderlycare
     },
     {
         id: 4,
@@ -63,18 +74,20 @@ export const proj = [
                 'Buyers have a buy history through which they can review the items they have bought.',
             ],
         tech: ['React.js', 'Python (Flask)', 'MySQL', 'XAMPP'],
-        gitlink: 'https://github.com/Jansxn/campuscart'
+        gitlink: 'https://github.com/Jansxn/campuscart',
+        resource: campuscart
     },
     {
         id: 5,
-        name: 'Automatic Number Plate Recognition',
+        name: 'ANPR Software',
         desc: ['Built a number plate recognition system in Python. It works along side a face-recognition system to identify the owner of the vehicle (Implemented by other team members).',
                 'Used YOLO object recognition software to detect and crop out the images of cars.',
                 'These images are saved and then passed through a software to recognize the number plate. and save the numberplate in a database.',
                 'Face recognition is also performed on these images to identify the owner of the vehicle.',
             ],
         tech: ['Python', 'YOLO', 'OpenCV', 'KerasOCR'],
-        gitlink: 'https://github.com/RNCManipal/Kavach'
+        gitlink: 'https://github.com/RNCManipal/Kavach',
+        resource: anpr
     },
     {
         id: 6,
@@ -85,7 +98,8 @@ export const proj = [
                 'Showcased in MITs Techtatva and and won 2nd place in the Vedant competiton'
             ],
         tech: ['Python', 'OpenCV', 'Tensorflow', 'Mediapipe'],
-        gitlink: 'https://github.com/RNCManipal/TouchlessPad'
+        gitlink: 'https://github.com/RNCManipal/TouchlessPad',
+        resource: touchlesspad
     },
     {
         id: 7,
@@ -96,6 +110,40 @@ export const proj = [
                 'Utilized CSS and Javascript to make the webite responsive across all devices',
             ],
         tech: ['React.js', 'Node.js', 'Figma'],
-        gitlink: 'https://github.com/Jansxn/portfolio'
+        gitlink: 'https://github.com/Jansxn/portfolio',
+        resource: portfolio
     }
+]
+
+export const exp = [
+    {
+        id: 1,
+        comp_name: 'Robotics and Circuits Club',
+        role: 'Coding Domain Member',
+        location: 'Manipal, India',
+        desc: ['Worked on multiple projects in the coding domain of the RnC student club in my college.',
+                'Collaborated with team members to build a Micromouse (Maze-Solving) Bot in Arduino to participate in competitions across India.',
+                'Developed a numberplate recognition software to be used by CCTV cameras for Kavach’23.',
+                'Reduced time delay by over 50% in drawing characters as well as added an automatic image cropping feature for character detection in a project which helped our team get 2nd place in MITs Techtatva Event.',
+                'Conducted interviews for new members attempting to join the club',
+                'Participated in multiple competitions in India.'
+            ],
+        duration: 'April 2022 - Present',
+        resource: 'https://roboticsandcircuits.com/'
+    },
+    {
+        id: 2,
+        comp_name: 'Robotics and Circuits Club',
+        role: 'Coding Domain Member',
+        location: 'Manipal, India',
+        desc: ['Worked on multiple projects in the coding domain of the RnC student club in my college.',
+                'Worked with team members to build a Micromouse (Maze-Solving) Bot in Arduino to participate in competitions across India.',
+                'Developed a numberplate recognition software to be used by CCTV cameras for Kavach’23.',
+                'Reduced time delay by over 50% in drawing characters as well as added an automatic image cropping feature for character detection in a project which helped our team get 2nd place in MITs Techtatva Event.',
+                'Conducted interviews for new members attempting to join the club',
+                'Participated in multiple competitions in India.'
+            ],
+        duration: 'April 2022 - Present',
+        resource: 'https://roboticsandcircuits.com/'
+    },
 ]
