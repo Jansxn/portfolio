@@ -1,9 +1,11 @@
 import React from "react";
 import "./Experience.css";
-import { exp } from "../personal_info";
+// import { exp } from "../personal_info";
+
+import {db} from '../../config/firebase.js';
+import { collection, getDocs } from 'firebase/firestore';
 
 function ExperienceCard({ name, desc, role, resource, id, location, duration }) {
-
     function add_zero(x) {
         if (x < 10) {
             return "0" + x;
@@ -55,6 +57,23 @@ function ExperienceCard({ name, desc, role, resource, id, location, duration }) 
 }
 
 function Experience() {
+    var [exp, setExp] = React.useState([{name:'', id:0, tech:[], desc:[], resource:'', gitlink:''}]);
+    var expRef = collection(db, 'experience');
+
+    React.useEffect(() => {
+        const getData = async () => {
+            const data = await getDocs(expRef);
+            setExp(data.docs.map((doc) => ({
+                ...doc.data()
+            })));
+            exp = exp.sort((a, b) => (a.id > b.id) ? 1 : -1)
+            setExp(exp)
+            console.log(exp)
+        };
+    
+        getData();
+    }, []);
+    
     return (
         <div className="experience" id = "experience">
             <div className="etitle title">

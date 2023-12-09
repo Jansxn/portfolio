@@ -1,33 +1,32 @@
-import {proj} from '../personal_info.js'
+// import {proj} from '../personal_info.js'
 import './PCards.css'
 import React from 'react'
 
 function PCards(props) {
-
-    console.log(props.id)
-
+    // console.log(props.proj)
+    var proj = props.proj
     return (
         <div className="pcard">
 
             <div className="pcard-title">
-                {proj[props.id].name}
+                {proj.name}
             </div>
 
             <div className="pcard-tech">
-                {proj[props.id].tech.map((etech) => <div className="pcard-tech-item">{etech}</div>)}
+                {proj.tech.map((etech) => <div className="pcard-tech-item">{etech}</div>)}
             </div>
 
             <div className = 'pcard-info'>
                 <ul className='pcard-desc-holder'>
-                    {proj[props.id].desc.map((edesc) => <li className="pcard-desc">{edesc}</li>)}
+                    {proj.desc.map((edesc) => <li className="pcard-desc">{edesc}</li>)}
                 </ul>
                 
                 <div className="pcard-resource">
                     <div className = 'pcard-imgholder'>
-                        <img src={proj[props.id].resource} alt="resource" className="pcard-resource-img"/>
+                        <img src={proj.resource} alt="resource" className="pcard-resource-img"/>
                     </div>
                     <div className="pcard-links">
-                        <a href={proj[props.id].gitlink} target="_blank" rel="noopener noreferrer">
+                        <a href={proj.gitlink} target="_blank" rel="noopener noreferrer">
                             <button className="pcard-button">Github</button>
                         </a>
                     </div>

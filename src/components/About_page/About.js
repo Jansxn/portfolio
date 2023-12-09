@@ -2,9 +2,30 @@ import React from "react";
 import "./About.css";
 import ACards from "./ACards.js";
 import jason_profile from "../../resources/jason_prof.jpg";
-import { technologies , pro_languages, web_languages, ling} from "../personal_info.js";
+// import { technologies , pro_languages, web_languages, ling} from "../personal_info.js";
+
+import {db} from '../../config/firebase.js';
+import { collection, getDocs } from 'firebase/firestore';
 
 function About() {
+    var [technologies, setTechnologies] = React.useState([]);
+    var [pro_languages, setPro_languages] = React.useState([]);
+    var [web_languages, setWeb_languages] = React.useState([]);
+    var [ling, setLing] = React.useState([]);
+
+    const aboutRef = collection(db, 'about-cards');
+    React.useEffect(() => {
+        const getData = async () => {
+            const data = await getDocs(aboutRef);
+            setTechnologies(data.docs[0].data().technologies);
+            setPro_languages(data.docs[0].data().pro_languages);
+            setWeb_languages(data.docs[0].data().web_languages);
+            setLing(data.docs[0].data().ling);
+        };
+    
+        getData();
+    }, []);
+
     return (
         <div className="about" id = "about" style={{width:'100%'}}>
 
