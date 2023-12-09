@@ -18,26 +18,26 @@ function Navbar() {
                 </li>
 
                 <li className="item">
-                    <a href="#">About</a>
+                    <a href="#about">About</a>
                 </li>
 
                 <li className="item">
-                    <a href="#">Projects</a>
+                    <a href="#projects">Projects</a>
                 </li>
 
                 <li className="item">
-                    <a href="#">Experience</a>
+                    <a href="#experience">Experience</a>
                 </li>
 
                 <li className="item priority" style={{color:'white'}}>
-                    <a href="#">Contact Me</a>
+                    <a href="#contact">Contact Me</a>
                 </li>
 
                 </ul>
 
                 <label htmlFor="checkbox">
                 <div className="mobile">
-                    <span class="material-symbols-outlined">
+                    <span className="material-symbols-outlined">
                         expand_more
                     </span>
                 </div>
