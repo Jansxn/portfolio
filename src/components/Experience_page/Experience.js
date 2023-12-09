@@ -66,8 +66,6 @@ function Experience() {
             setExp(data.docs.map((doc) => ({
                 ...doc.data()
             })));
-            exp = exp.sort((a, b) => (a.id > b.id) ? 1 : -1)
-            setExp(exp)
             console.log(exp)
         };
     
