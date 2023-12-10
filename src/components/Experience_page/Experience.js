@@ -66,7 +66,6 @@ function Experience() {
             setExp(data.docs.map((doc) => ({
                 ...doc.data()
             })));
-            console.log(exp)
         };
     
         getData();

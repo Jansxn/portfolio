@@ -17,6 +17,7 @@ function Contact() {
         <div className="cdata">
             <div className="cformholder">
             <form className="cform" action="https://formsubmit.co/3785c230423a4b0e51cfce60c0c2ce39" method="POST">
+            <input type="hidden" name="_next" value="https://jansxn.github.io/portfolio/"></input>
 
             <div className="nameinput">
             <label htmlFor="fname" className="inholder">
