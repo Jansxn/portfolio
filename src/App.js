@@ -8,8 +8,27 @@ import Experience from './components/Experience_page/Experience';
 import Contact from './components/Contact_page/Contact';
 
 function App() {
+    window.addEventListener("load", () => {
+      const loader = document.querySelector(".pre-loader");
+  
+      if (loader) {
+        loader.classList.add("pre-loader--hidden");
+        // const a = document.querySelector(".App");
+  
+        loader.addEventListener("transitionend", () => {
+          loader.classList.display = "none";
+        });
+      }
+    });
   return (
     <div className="App">
+      <div className="pre-loader">
+        <div className='dot'></div>
+        <div className='dot'></div>
+        <div className='dot'></div>
+        <div className='dot'></div>
+        <div className='dot'></div>  
+      </div>
       <Navbar />
       <Home />
       <About />
