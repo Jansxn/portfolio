@@ -13,10 +13,9 @@ function App() {
   
       if (loader) {
         loader.classList.add("pre-loader--hidden");
-        // const a = document.querySelector(".App");
   
         loader.addEventListener("transitionend", () => {
-          loader.classList.display = "none";
+          loader.style.display = "none";
         });
       }
     });
