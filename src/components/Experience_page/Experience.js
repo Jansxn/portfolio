@@ -40,8 +40,8 @@ function ExperienceCard({ name, desc, role, resource, id, location, duration }) 
             </div>
 
                 <ul className="experience_card_desc">
-                    {desc.map((d) => (
-                        <li className="experience_card_desc_point">
+                    {desc.map((d, ind) => (
+                        <li className="experience_card_desc_point" key= {ind}>
                             {d}
                         </li>
                     ))}
