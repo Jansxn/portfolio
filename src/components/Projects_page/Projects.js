@@ -16,7 +16,7 @@ function Projects() {
         const getProjects = async () => {
             const data = await getDocs(projRef);
             setProj(data.docs.map((doc, index) => ({
-                id: index + 1, // Add 1 to start the id from 1
+                id: index + 1, 
                 ...doc.data()
             })));
             setCur_proj(data.docs[0].data())
@@ -35,7 +35,7 @@ function Projects() {
         e.target.classList.add("active")
     }
     // console.log(proj)
-    var proj_name_list = (proj.map((eproj) => <button onClick={changeCard} className="pbutton" id= {eproj.id}>{eproj.name}</button>))
+    var proj_name_list = (proj.map((eproj) => <button key={eproj.id} onClick={changeCard} className="pbutton" id= {eproj.id}>{eproj.name}</button>))
     return (
         <div className="projects" id = "projects">
 
